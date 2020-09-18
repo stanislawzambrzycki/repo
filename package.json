@@ -1,0 +1,19 @@
+{
+  "name": "repo",
+  "version": "1.0.0",
+  "description": "my first website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stanislawzambrzycki/repo.git"
+  },
+  "author": "Stanislaw Zambrzycki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stanislawzambrzycki/repo/issues"
+  },
+  "homepage": "https://github.com/stanislawzambrzycki/repo#readme"
+}
