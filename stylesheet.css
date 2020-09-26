@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
 *{
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     font-weight: normal;
+    margin: 0;
+    padding: 0;
 }
 
 .background {
@@ -15,13 +17,6 @@
 /*  .site-opacity {
     opacity: 0.8;
 }   */
-
-p,
-a,
-h1,
-h2 {
-    opacity: 1;
-}
 
 body{
     /*background-color:hsla(39, 51%, 4%, 1);*/
@@ -37,74 +32,71 @@ body{
     /* line-height: 1.6em; */
 }
 
-.container{
-    margin-left: 1em;
-    margin-right: 1em;
-    overflow: hidden;
-}
-
-/*.main-header{
-    color:hsl(30.2,49.8%,50%);
-    background-color: black;
-}*/
-
 .navbar{
     background-color: hsla(39, 51%, 3%, 0.8);
     border-style: solid;
-    border-color:hsl(30.2,49.8%,50%);
-    border-left: 0px;
-    border-right: 0px;
-
+    border-color:hsla(30.2,49.8%,50%,0.4);
+    border-width: 0.1px 0px 0.1px 0px;
+    overflow: hidden;
 } 
 
-.navbar ul{
-    padding:0;
+.ulDiv {
+    padding: 1em 0;
     list-style:none;
     float: left;
+    height: 100%;
     width: 70%;
     box-sizing: border-box;
 }
 
 .navbar li{
     display:inline-block;
-    padding-left: 5%;
+    padding-left: 8vw;
 }
 
 .navbar a{
     color:hsla(30.2,49.8%,50%, 1);
     text-decoration:none;
-    font-size: 22px;
+    font-size: 1.5em;
 }
 
+.searchDiv {
+    margin: 1em 0em;
+    float: right;
+    height: 100%;
+    width: 30%;
+}
 .search input[type=text] {
-    margin-top: 15px;
-    padding: 1px;
-    font-size: 18px;
+    margin-right: 1em;
+    padding: 0.2em;
+    font-size: 1.2em;
     border: 1px solid hsl(30.2,49.8%,50%);
     float: right;
-    width: 30%;
-    box-sizing: border-box;
+    height: 100%;
+    width: 90%;
     background: #f1f1f1;
   }
 
-.showcase{
+.citation {
     color:hsl(30.2,49.8%,50%);
     background-color: hsla(39, 51%, 1%, 0.6);
+    padding: 1em 8vw;
     border-style: solid;
-    border-color: hsla(30.2,49.8%,50%, 1);
-    border-left: 0px;
-    border-top: 0px;
-    border-right: 0px;
-    margin: auto;
-    overflow: hidden;
-    min-height: 25px;
-    text-align: center;
-    font-size: 16px;
+    border-color:hsla(30.2,49.8%,50%,0.4);
+    border-width: 0px 0px 0.1px 0px;
+    /* overflow: hidden; */
+    /* min-height: 5vh; */
+    text-align: left;
+}
+
+.citation cite {
+    font-size: 1.5em;
 }
 
 h1 {
-    margin: 0;
-    padding: 0;
+    font-size: 1.8em;
+    /* margin: 0 0 1vw 0; */
+    padding:0 0 2vw 0;
 }
 
 .main{
@@ -112,11 +104,16 @@ h1 {
     font-size: 18px;
     min-height: 70vh;
     background-color: hsla(39, 51%, 3%, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     /*opacity: 0.5;*/
     /* overflow: hidden; */
 }
 
 .articleContainer {
+    margin: 1vw 0 0 0;
+    padding: 1vw 0 8vw 0;
     display: flex; 
     justify-content: center;
     align-items: center;
@@ -131,9 +128,9 @@ min-width: 350px;
 height: 25vw;
 min-height: 350px;
 float: left;
-border: 0.3px;
+/* border: 0.3px;
 border-style: solid;
-border-color: hsl(30.2,49.8%,50%);
+border-color: hsl(30.2,49.8%,50%); */
 margin: 1%;
 box-sizing: border-box;
 color:hsl(30.2,49.8%,50%);
@@ -184,9 +181,9 @@ transition-timing-function: ease-in;
 .footer{
     margin-top: auto;
     border-style: solid;
-    border-color: hsl(30.2,49.8%,50%);
-    border-left: 0px;
-    border-right: 0px;
+    border-style: solid;
+    border-color:hsla(30.2,49.8%,50%,0.4);
+    border-width: 0.1px 0px 0.1px 0px;
     margin-bottom: 0; 
     color:hsl(30.2,49.8%,50%);
     background-color: black;
