@@ -48,6 +48,13 @@ body{
     box-sizing: border-box;
 }
 
+@media (max-width: 800px) {
+    .ulDiv {
+        padding-right: 3vw;
+    }
+  }
+
+
 .navbar li{
     display:inline-block;
     padding-left: 4vw;
@@ -63,9 +70,9 @@ body{
     font-size: 1.5em;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     .navbar a {
-        font-size: 3.3vw;
+        font-size: 3vw;
     }
   }
 
@@ -113,15 +120,20 @@ body{
     }
   }
 
+  /* @media (max-width: 700px) {
+    .citation {
+        text-align: center;
+    }
+  } */
+
 .citation cite {
-    font-size: 1.5em;
-    letter-spacing: 0.1vw;
+    font-size: 1.3em;
+    letter-spacing: 0.15vw;
 }
 
-@media (max-width: 700) {
+@media (max-width: 800px) {
     .citation cite {
-        text-align: center;
-        font-size: 3vw;        
+        font-size: 2.5vw;
     }
   }
 
@@ -135,6 +147,12 @@ h1 {
     font-size: 1.8em;
     padding:3vw 0 2vw 0;
 }
+
+@media (max-width: 800px) {
+    h1 {
+        font-size: 3vw;
+    }
+  }
 
 .main{
     text-align: center;
@@ -152,12 +170,6 @@ h1 {
     }
   }
 
-  @media (max-width: 1000) {
-    .main {
-        font-size: 3vw;
-    }
-  }
-
 .articleContainer {
     margin: 0 0 0 0;
     padding: 0 0 8vw 0;
@@ -172,7 +184,7 @@ h1 {
 .article{
 width: 25vw;
 min-width: 350px;
-height: 25vw;
+height: 20vw;
 min-height: 350px;
 float: left;
 /* border: 0.3px;
@@ -182,7 +194,7 @@ margin: 3vw;
 color:hsl(30, 70%, 50%);
 opacity: 0.9;
 filter: sepia(100%);
-background-image: url('./images/full-moon-2055469_960_720.png');
+background-image: url('./images/projekt.png');
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
