@@ -33,12 +33,18 @@ body{
     overflow: hidden;
 } 
 
+@media (max-width: 1200px) {
+    .navbar {
+        background-color: hsla(39, 51%, 3%, 1);
+    }
+  }
+
 .ulDiv {
     padding: 1em 0;
     list-style:none;
     float: left;
     height: 100%;
-    width: 70%;
+    min-width: 70%;
     box-sizing: border-box;
 }
 
@@ -57,8 +63,14 @@ body{
     font-size: 1.5em;
 }
 
+@media (max-width: 700px) {
+    .navbar a {
+        font-size: 3.3vw;
+    }
+  }
+
 .navbar a:hover {
-    filter: blur(0.5px) grayscale(50%);
+    filter: blur(0.5px) grayscale(50%) drop-shadow(0 0 1.5em rgb(197, 120, 6));
 }
 
 .searchDiv {
@@ -67,6 +79,13 @@ body{
     height: 100%;
     width: 30%;
 }
+
+@media (max-width: 1200px) {
+    .searchDiv {
+      display: none;
+    }
+  }
+
 .search input[type=text] {
     margin-right: 1em;
     padding: 0.2em;
@@ -88,10 +107,23 @@ body{
     text-align: left;
 }
 
+@media (max-width: 1200px) {
+    .citation {
+        background-color: hsla(39, 51%, 3%, 0.9);
+    }
+  }
+
 .citation cite {
     font-size: 1.5em;
     letter-spacing: 0.1vw;
 }
+
+@media (max-width: 700) {
+    .citation cite {
+        text-align: center;
+        font-size: 3vw;        
+    }
+  }
 
 hr {
     border-style: solid;
@@ -113,6 +145,18 @@ h1 {
     flex-direction: column;
     justify-content: center;
 }
+
+@media (max-width: 1200px) {
+    .main {
+        background-color: hsla(39, 51%, 3%, 1);
+    }
+  }
+
+  @media (max-width: 1000) {
+    .main {
+        font-size: 3vw;
+    }
+  }
 
 .articleContainer {
     margin: 0 0 0 0;
